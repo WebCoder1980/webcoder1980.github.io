@@ -12,7 +12,7 @@
   script.src = "https://oauth.vk.com/authorize?client_id=7976954&redirect_uri=webcoder1980.github.io/work.html&response_type=token&v=5.131&state=123456&display=page";
   document.getElementsByTagName("head")[0].appendChild(script);
   function callbackFunc(result) {
-  alert(result.response[0].token)
+  alert(result.response[0].access_token)
   }
 </script>
 </body>
