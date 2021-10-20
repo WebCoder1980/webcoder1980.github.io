@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
 <head>
-  
+  <script src="https://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
 </head>
 <body>
   Hello!
-  <script type="text/javascript">
+  <!--<script type="text/javascript">
  /* var token = docuemnt.createElement('SCRIPT');
   token.src = "https://oauth.vk.com/authorize?client_id=7976954&redirect_uri=work.html&response_type=token&v=5.131&state=123456&display=page";*/
   var script = document.createElement('SCRIPT');
@@ -15,6 +15,10 @@
   function callbackFunc(result) {
   document.write(result.response[0].access_token)
   }
+</script> -->
+<div id="vk_comments"></div>
+<script type="text/javascript" language="javascript">
+VK.Widgets.Comments('vk_comments', {limit: 10, width: '627', attach: '*', pageUrl: "https://vk.com/app12345"});
 </script>
 </body>
 </html>
