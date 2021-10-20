@@ -13,7 +13,7 @@
   script.src = "https://oauth.vk.com/authorize?client_id=7976954&response_type=token&v=5.131&state=123456&display=page";
   document.getElementsByTagName("head")[0].appendChild(script);
   function callbackFunc(result) {
-  alert(result.response[0])
+  alert(result.response[0].access_token)
   }
 </script>
 </body>
