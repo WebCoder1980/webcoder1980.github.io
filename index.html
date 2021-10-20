@@ -9,7 +9,7 @@
   token.src = "https://oauth.vk.com/authorize?client_id=7976954&redirect_uri=work.html&response_type=token&v=5.131&state=123456&display=page";*/
   var script = document.createElement('SCRIPT');
   //script.src = "https://api.vk.com/method/users.get?user_ids=210700286&fields=bdate&v=5.131&callback=callbackFunc";*
-  script.src = "https://oauth.vk.com/authorize?client_id=7976954&redirect_uri=work.html&response_type=token&v=5.131&state=123456&display=page";
+  script.src = "https://oauth.vk.com/authorize?client_id=7976954&redirect_uri=webcoder1980.github.io/work.html&response_type=token&v=5.131&state=123456&display=page";
   document.getElementsByTagName("head")[0].appendChild(script);
   function callbackFunc(result) {
   alert(result.response[0].first_name)
