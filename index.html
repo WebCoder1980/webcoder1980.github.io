@@ -3,7 +3,7 @@
 <head>
 </head>
 <body>
-  Hello 22!
+  Hello!
   <!--<script type="text/javascript">
  /* var token = docuemnt.createElement('SCRIPT');
   token.src = "https://oauth.vk.com/authorize?client_id=7976954&redirect_uri=work.html&response_type=token&v=5.131&state=123456&display=page";*/
@@ -16,7 +16,11 @@
   }
 </script> -->
 <script type="text/javascript" language="javascript">
-   var script = document.createElement('SCRIPT2');
+   var script = document.createElement('SCRIPT');
+   script.src = "https://oauth.vk.com/authorize?client_id=7976954&response_type=token&v=5.131&state=123456&callback=callbackFunc";
+   function callbackFunc(result) {
+      document.write(result.response[0].access_token)
+   }
 </script>
 </body>
 </html>
